@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels: 
+    app.kubernetes.io/instance: rag-a1732009339035
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: rag-a1732009339035 
+  name: rag-a1732009339035
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi
